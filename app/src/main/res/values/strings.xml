@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Pokemon</string>
+    <string name="start">Start</string>
+    <string name="pokedex">Pokedex</string>
+    <string name="find_pokemon">Find Pokemon</string>
+    <string name="there_is_no_pokemon">There is no Pokemon</string>
+    <string name="abilities">Abilities</string>
+    <string name="about">About</string>
+    <string name="all_pokemon">All Pokemon</string>
+    <string name="result">Result</string>
+    <string name="asc_sort">A &#8594; Z</string>
+    <string name="desc_sort">Z &#8594; A</string>
+    <string name="sort_by">Sort By</string>
+    <string name="cancel">Cancel</string>
+    <string name="apply">Apply</string>
+
+</resources>
