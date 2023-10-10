@@ -1,4 +1,4 @@
-package com.elanyudho.pokemon.search
+package com.elanyudho.pokemon.ui.search
 
 import androidx.lifecycle.viewModelScope
 import com.elanyudho.core.abstraction.BaseViewModel

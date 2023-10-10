@@ -1,4 +1,4 @@
-package com.elanyudho.pokemon.search
+package com.elanyudho.pokemon.ui.search
 
 import android.app.AlertDialog
 import android.content.Intent

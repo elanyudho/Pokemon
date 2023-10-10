@@ -15,7 +15,7 @@ import com.elanyudho.core.util.extension.getIdFromUrl
 import com.elanyudho.core.util.pagination.RecyclerViewPaginator
 import com.elanyudho.pokemon.R
 import com.elanyudho.pokemon.databinding.ActivityMainBinding
-import com.elanyudho.pokemon.search.SearchActivity
+import com.elanyudho.pokemon.ui.search.SearchActivity
 import com.elanyudho.pokemon.ui.detail.DetailPokemonActivity
 import com.elanyudho.pokemon.ui.main.adapter.PokemonAdapter
 import dagger.hilt.android.AndroidEntryPoint
