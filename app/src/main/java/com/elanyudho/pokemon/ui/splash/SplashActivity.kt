@@ -19,6 +19,7 @@ class SplashActivity : BaseActivityBinding<ActivitySplashBinding>() {
         with(binding) {
             btnStart.setOnClickListener {
                 startActivity(Intent(this@SplashActivity, MainActivity::class.java))
+                finishAffinity()
             }
         }
     }
