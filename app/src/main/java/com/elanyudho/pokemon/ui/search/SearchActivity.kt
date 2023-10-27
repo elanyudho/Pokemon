@@ -96,7 +96,6 @@ class SearchActivity : BaseActivityBinding<ActivitySearchBinding>(), Observer<Se
     private fun setRvPagination() {
         paginator = RecyclerViewPaginator(binding.rvPokemon.layoutManager as LinearLayoutManager)
         paginator?.setOnLoadMoreListener { page ->
-            Log.d("PAGE", page.toString())
             isFirstGet = false
             searchViewModel.getPokemonByName(query, currSort, page)
         }
