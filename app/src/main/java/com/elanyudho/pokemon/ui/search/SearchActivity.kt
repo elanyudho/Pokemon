@@ -108,20 +108,20 @@ class SearchActivity : BaseActivityBinding<ActivitySearchBinding>(), Observer<Se
 
             svPokemon.setOnQueryChangeListener(object : SearchView.OnQueryTextListener {
                 override fun onQueryTextSubmit(query: String?): Boolean {
-                    if (query.toString().isNotEmpty()) {
-                         this@SearchActivity.query= query!!
-                        isFirstGet = true
-                        pokemonAdapter.clearList()
-                        searchViewModel.getPokemonByName(this@SearchActivity.query, currSort, 1L)
-                        paginator = null
-                        setRvPagination()
-                    }
-                    return true
+
+                    return false
                 }
 
                 override fun onQueryTextChange(newText: String?): Boolean {
+                    if (newText.toString().isNotEmpty()) {
+                        this@SearchActivity.query= newText!!
+                        isFirstGet = true
+                        searchViewModel.getPokemonByName(this@SearchActivity.query, currSort, 1L)
+                        paginator = null
+                        setRvPagination()
+                    } else pokemonAdapter.clearList()
 
-                    return false
+                    return true
                 }
 
             })
